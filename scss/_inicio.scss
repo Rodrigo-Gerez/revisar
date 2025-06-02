@@ -1,0 +1,15 @@
+main {
+    .seccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.vid {
+        display: flex;
+        justify-content: center;
+    }
+    .piramide {
+        width: 95%;
+        }
+}
