@@ -36,27 +36,47 @@ h4 {
   width: 90%;
 }
 
-.header .nav-link {
+header .navbar {
+  background-color: rgb(22, 22, 63) !important;
+}
+header .nav-link {
   color: aliceblue !important;
 }
-.header .navbar-toggler-icon {
+header .navbar-toggler-icon {
   background-color: aliceblue;
   border-radius: 8px;
 }
 
-main .cards {
+main .home-seccion {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
-main .card {
-  margin-bottom: 15px;
-  height: 400px;
+main video,
+main .piramide {
+  width: 90%;
 }
-main .card-img-top {
-  height: 139px;
+main .background {
+  margin: 50px;
+}
+main .vid {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 650px) {
+  main h1 {
+    font-size: 22px;
+  }
+  main h2 {
+    font-size: 16px;
+  }
+  main h4 {
+    font-size: 12px;
+  }
+  main .piramide {
+    width: 95%;
+  }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */

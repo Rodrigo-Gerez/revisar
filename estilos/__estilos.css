@@ -107,6 +107,8 @@ video,
         .piramide {
         width: 95%;
         }
+        
+        
     
     }
 
@@ -138,4 +140,42 @@ video,
     }
     .card-img-top {
         height: 139px;
+    }
+
+    /* Galeria */
+
+    .images {
+        display: flex;
+        flex-direction: row;
+        margin: 30px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .img-container {
+        width: 33%; 
+    }
+
+    .img-container img{
+        width: 100%;
+    }
+
+    .carrousel{
+        margin-left: 50px;
+        width: 80%;
+        height: auto;
+        align-items: center;
+
+    }
+    @media (max-width: 650px) {
+        .images {
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+            height: auto;
+        }
+        .img-container{
+            width: 75%;
+            margin-bottom: 10px;
+        }
     }

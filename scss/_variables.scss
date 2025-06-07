@@ -1,14 +1,23 @@
-
 * {
     margin: 0%;
     padding: 0%;
 }
+
+$ColorPrimario: aquamarine;
+$Colorh1: crimson;
+$Colorh2: indigo;
+$Colorh4: rgb(11, 11, 66);
+$ColorNav: rgb(22, 22, 63);
+$BackColorBody: rgb(189, 233, 218);
+
+
+
 body {
-    background-color: rgb(189, 233, 218);
+    background-color: $BackColorBody;
 }
 
 h1 {
-    color: crimson;
+    color: $Colorh1;
     text-decoration-line: underline;
     text-align: center;
     font-family: "Poetsen One", sans-serif;
@@ -18,13 +27,14 @@ h1 {
 }
 
 h2 {
-    color: indigo;
+    color: $Colorh2;
     text-align: center;
 }
 
-h4{
-    color: rgb(11, 11, 66);
+h4 {
+    color: $Colorh4;
 }
+
 .piedepagina {
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
@@ -34,12 +44,56 @@ h4{
     justify-content: space-between;
     width: 90%;
 }
-.header {
+
+header {
+    .navbar {
+        background-color: $ColorNav !important;
+    }
+
     .nav-link {
         color: aliceblue !important;
+    }
+
+    .navbar-toggler-icon {
+        background-color: aliceblue;
+        border-radius: 8px;
+    }
 }
-.navbar-toggler-icon {
-    background-color: aliceblue;
-    border-radius: 8px;
+
+@mixin mobile {
+    @media (max-width: 650px) {
+        h1 {
+            font-size: 22px;
+        }
+
+        h2 {
+            font-size: 16px;
+        }
+
+        h4 {
+            font-size: 12px;
+
+        }
+
+        @content
+    }
 }
+
+@mixin tabletDesk {
+    @media (min-width: 992px) {
+        h1 {
+            background-color: red;
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+
+        h4 {
+            font-size: 14px;
+
+        }
+
+    }
 }

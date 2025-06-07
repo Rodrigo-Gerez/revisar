@@ -1,15 +1,28 @@
 main {
-    .seccion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.vid {
+    .home-seccion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    video,
+    .piramide {
+        width: 90%;
+    }
+
+    .background {
+        margin: 50px;
+    }
+
+    .vid {
         display: flex;
         justify-content: center;
     }
-    .piramide {
-        width: 95%;
+
+    @include mobile {
+        .piramide {
+            width: 95%;
         }
+    }
 }
