@@ -1,0 +1,24 @@
+main {
+    .images {
+        display: flex;
+        flex-direction: row;
+        margin: 30px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .img-container {
+        width: 33%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .carrousel {
+        margin-left: 50px;
+        width: 80%;
+        height: auto;
+        align-items: center;
+    }
+}
