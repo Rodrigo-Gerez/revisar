@@ -39,11 +39,9 @@ h4 {
 header .navbar {
   background-color: rgb(22, 22, 63) !important;
 }
-
 header .nav-link {
   color: aliceblue !important;
 }
-
 header .navbar-toggler-icon {
   background-color: aliceblue;
   border-radius: 8px;
@@ -55,45 +53,30 @@ main .home-seccion {
   justify-content: center;
   align-items: center;
 }
-
 main video,
 main .piramide {
   width: 90%;
 }
-
 main .background {
   margin: 50px;
 }
-
 main .vid {
   display: flex;
   justify-content: center;
 }
-
 @media (max-width: 650px) {
   main h1 {
     font-size: 22px;
   }
-
   main h2 {
     font-size: 16px;
   }
-
   main h4 {
     font-size: 12px;
   }
-
   main .piramide {
     width: 95%;
   }
-
-  .cards {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    height: auto;
-  }
-
 }
 
 main .images {
@@ -103,15 +86,12 @@ main .images {
   align-items: center;
   justify-content: space-between;
 }
-
 main .img-container {
   width: 33%;
 }
-
 main .img-container img {
   width: 100%;
 }
-
 main .carrousel {
   margin-left: 50px;
   width: 80%;
@@ -124,9 +104,55 @@ main .empresa {
   color: darkblue;
   text-align: center;
 }
-
 main .equipo-card {
   margin: auto;
+}
+
+main main.contacto {
+  padding: 20px;
+}
+main .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+main form {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main form div {
+  display: flex;
+  flex-direction: column;
+}
+main input[type=text],
+main input[type=tel],
+main input[type=email] {
+  padding: 4px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+main button {
+  width: 100px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+main button:hover {
+  background-color: #5f758d;
+}
+main iframe {
+  flex: 1 1 300px;
+  width: 100%;
+  height: 300px;
+  border: none;
+  box-shadow: 4px 4px 8px;
 }
 
 main .cards {
@@ -136,12 +162,12 @@ main .cards {
   align-items: center;
   flex-wrap: wrap;
 }
-
 main .card {
   margin-bottom: 15px;
   height: 400px;
 }
-
 main .card-img-top {
   height: 139px;
 }
+
+/*# sourceMappingURL=style.css.map */
