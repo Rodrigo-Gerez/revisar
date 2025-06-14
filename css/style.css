@@ -53,14 +53,23 @@ main .home-seccion {
   justify-content: center;
   align-items: center;
 }
-main video,
-main .piramide {
-  width: 90%;
+main .background {
+  width: 60%;
+  box-shadow: 4px 4px 8px;
+  transition: 0.4s;
 }
 main .background {
   margin: 50px;
 }
+main .background:hover {
+  transform: scale(1.1);
+}
+main video {
+  width: 90%;
+  box-shadow: 4px 4px 8px;
+}
 main .vid {
+  width: 70%;
   display: flex;
   justify-content: center;
 }
@@ -79,6 +88,16 @@ main .vid {
   }
 }
 
+.piedepagina {
+  background-color: rgba(237, 237, 237, 0.968);
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 main .images {
   display: flex;
   flex-direction: row;
@@ -88,6 +107,7 @@ main .images {
 }
 main .img-container {
   width: 33%;
+  box-shadow: 4px 4px 8px;
 }
 main .img-container img {
   width: 100%;
@@ -97,6 +117,18 @@ main .carrousel {
   width: 80%;
   height: auto;
   align-items: center;
+  box-shadow: 4px 4px 8px;
+}
+
+.piedepagina {
+  background-color: rgba(237, 237, 237, 0.968);
+  width: 97%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 main .empresa {
@@ -106,6 +138,17 @@ main .empresa {
 }
 main .equipo-card {
   margin: auto;
+}
+
+.piedepagina {
+  background-color: rgba(237, 237, 237, 0.968);
+  width: 97%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 main main.contacto {
@@ -155,6 +198,17 @@ main iframe {
   box-shadow: 4px 4px 8px;
 }
 
+.piedepagina {
+  background-color: rgba(237, 237, 237, 0.968);
+  width: 97%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
 main .cards {
   display: flex;
   flex-direction: row;
@@ -168,6 +222,17 @@ main .card {
 }
 main .card-img-top {
   height: 139px;
+}
+
+.piedepagina {
+  background-color: rgba(237, 237, 237, 0.968);
+  width: 97%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=style.css.map */

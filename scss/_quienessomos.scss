@@ -10,3 +10,14 @@ main {
         margin: auto;
     }
 }
+
+.piedepagina {
+    background-color: $ColorFooter;
+    width: 97%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}

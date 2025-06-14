@@ -6,16 +6,27 @@ main {
         align-items: center;
     }
 
-    video,
-    .piramide {
-        width: 90%;
+    .background {
+        width: 60%;
+        box-shadow: 4px 4px 8px;
+        transition: .4s;
     }
 
     .background {
         margin: 50px;
     }
 
+    .background:hover {
+        transform: scale(1.1);
+    }
+
+    video {
+        width: 90%;
+        box-shadow: 4px 4px 8px;
+    }
+
     .vid {
+        width: 70%;
         display: flex;
         justify-content: center;
     }
@@ -25,4 +36,15 @@ main {
             width: 95%;
         }
     }
+}
+
+
+.piedepagina {
+    background-color: $ColorFooter;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
